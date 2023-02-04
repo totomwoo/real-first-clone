@@ -1,0 +1,127 @@
+#chatting-screen{
+background-color: #abc1d1;  
+  height: 500vh;
+  z-index: 2;
+}
+#chatting-screen .status-bar,
+#chatting-screen .alt-header{
+  top: 0;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #abc1d1; 
+  z-index: 1;
+}
+
+@keyframes fadein{
+  from{
+    opacity: 0;
+  transform:translateY(10px);
+  }
+  to{
+    transform:none;
+  opacity: 1;
+  }
+}
+@keyframes fadein_right{
+  from{
+    opacity: 0;
+  transform:translateX(10px);
+  }
+  to{
+    transform:none;
+  opacity: 1;
+  }
+}
+
+@keyframes fadein_left{
+  from{
+    opacity: 0;
+  transform:translateX(-10px);
+  }
+  to{
+    transform:none;
+  opacity: 1;
+  }
+}
+
+.main-screen_chattingroom{
+  margin-top: 80px;
+  margin-left:17px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation:fadein 2s linear;
+}
+
+.chat_timestamp{
+  font-size: 12px;
+  color: white;
+  background-color: #92a4b2;
+  padding: 13px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+}
+
+.message-row {
+  width: 100%;
+  display: flex;
+  margin-bottom: 25px;
+  animation: fadein_left 2s linear;
+}
+
+.message-row--own{
+    width: 100%;
+  display: flex;
+  margin-bottom: 25px;
+  justify-content: flex-end;
+  margin-right: 17px;
+  animation: fadein_right 2s linear;
+}
+
+.message-row img{
+  width: 50px;
+  height: 50px;
+  border-radius: 30%;
+}
+
+.message-row_content{
+margin-left: 4px;
+}
+
+.message_author{
+  opacity: 0.9;
+  font-size: 14px;
+  display: block;
+  margin:3px 0px 7px;
+}
+.message_info{
+  display: flex;
+  align-items: flex-end;
+}
+
+.message_bubble{
+  background-color: white;
+  font-size: 14px;
+  padding: 7px;
+  border-radius: 10px;
+  border-top-left-radius: 0px;
+  
+}
+.message_time{
+  font-size: 8px;
+ margin-left: 4px;
+  opacity: 0.8;
+}
+
+.message-row--own .message_bubble{
+  background-color: var(--yellow);
+   border-top-right-radius: 0px;
+   border-top-left-radius: 10px;
+  margin-left: 4px;
+}
+
+.message-row--own .message_info{
+  flex-direction: row-reverse;
+}
+

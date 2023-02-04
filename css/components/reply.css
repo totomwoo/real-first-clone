@@ -1,0 +1,87 @@
+.reply{
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  width:100%;
+  background-color: white;
+  justify-content: space-between;
+  padding: 5px 20px;
+  align-items: center;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+.reply_column:first-child{
+  width: 10%;
+}
+.reply_column:last-child{
+  margin-left: 10px;
+  width: 90%;
+}
+
+.reply input{
+  padding: 10px;
+  width: 96%;
+  border: var(--main-border);
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out ;
+}
+
+.reply_column{
+  position: relative;
+}
+
+.reply_column:last-child> iconify-icon,
+.reply_column button{
+  position: absolute;
+  right: 2%;
+  top: 3px;
+}
+
+.reply_column:last-child> iconify-icon{
+  right: 40px;
+  top: 4px;
+}
+.reply_column button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--yellow);
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  }
+
+.reply_column button:focus,
+.reply_column button:active{
+outline: none;
+}
+
+.reply_column iconify-icon {
+  opacity: 0.7;
+}
+.reply_column button iconify-icon{
+  opacity: 1;
+}
+.reply .reply_column:first-child,
+.reply .reply_column iconify-icon,
+.reply button{
+transition: opacity 0.3s ease-in-out;
+}
+
+
+.reply:focus-within .reply_column:first-child,
+.reply:focus-within .reply_column iconify-icon,
+.reply:focus-within button{
+opacity: 0;
+}
+
+.reply:focus-within input{
+  width: 98vw;
+  transform: translateX(-10%) translateY(-80px);
+}
+
+.reply:focus-within{
+  transform: translateY(80px);
+}

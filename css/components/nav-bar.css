@@ -1,0 +1,84 @@
+.nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color:#f9f9fa;
+  padding:20px 50px;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(0, 0, 0, 0.2)
+}
+.nav_list {
+  display:flex;
+  justify-content:space-between;
+}
+
+.nav_link{
+  color: #2e363e;
+  position: relative;
+}
+
+@keyframes ditoanimation{
+  0%{
+    transform: none;
+  }
+  50%{
+    transform: translateY(-5px) rotateY(180deg);
+      }
+  100%{transform: none;}
+}
+
+
+.nav_dito{
+  background-color: tomato;
+  color: white;
+  width: 15px;
+  height: 15px;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5px;
+  position: absolute;
+  bottom: 18px;
+  right: -5px;
+  animation: ditoanimation 2s ease-in-out infinite;
+}
+
+.nav_alarm{
+  width: 5px;
+  height: 5px;
+  border-radius: 2.5px;
+  background-color: tomato;
+  position: absolute;
+  top: -8px;
+  right: 1px;
+  
+}
+
+@keyframes btnfly{
+  from{
+   
+    opacity: 0;
+  }
+  to{
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.nav_btn{
+   transform: translateY(70px);
+  opacity: 0;
+  animation: btnfly 1s ease-in-out forwards;
+  animation-delay: 2.4s;
+}
+
+.nav_btn:nth-child(2){
+   animation-delay: 2.9s;
+}
+.nav_btn:nth-child(3){
+   animation-delay: 3.4s;
+}
+.nav_btn:last-child{
+   animation-delay: 3.9s;
+}

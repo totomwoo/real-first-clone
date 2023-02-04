@@ -1,0 +1,33 @@
+.chat_bar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+   margin: 40px 15px 15px ;
+
+}
+
+.header_title{
+  font-size: 25px;
+  font-weight: 400px;
+}
+
+.header_icons span{
+margin-right: 15px;
+  position: relative;
+}
+
+@keyframes spinanimation{
+  0%{
+    transform: none;
+  }
+  50%{
+    transform: rotateZ(360deg);
+  }
+  100%{
+    transform: none;
+  }
+}
+
+.header_icons_option:hover {
+  animation: spinanimation 2s linear infinite;
+}

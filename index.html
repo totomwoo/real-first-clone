@@ -1,17 +1,147 @@
 <!DOCTYPE html>
-<html>
+<html lang="kr">
 
 <head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+  </style>
+
+  <title>Friends-kokoa</title>
+  <link rel="stylesheet" href="css/style.css">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>All About Me</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+
+
 </head>
 
 <body>
+  <div class="status-bar">
+    <div class="status-bar_column">
+      <span>No service</span>
+      <iconify-icon icon="material-symbols:signal-wifi-4-bar"></iconify-icon>
+    </div>
+    <div class="status-bar_column">
+      <span>18:43</span>
+    </div>
+    <div class="status-bar_column">
+      <span>110%</span>
+      <iconify-icon inline icon="material-symbols:battery-3-bar"></iconify-icon>
+      <iconify-icon inline icon="mdi:lightning-bolt-outline"></iconify-icon>
+    </div>
+  </div>
+  <header class="chat_bar">
+    <h1 class="header_title">
+      Friends
+    </h1>
+    <div class="header_icons">
+      <span>
+        <iconify-icon icon="material-symbols:search" width="25" height="25"></iconify-icon>
+      </span>
+      <span>
+        <iconify-icon icon="mdi:music" width="25" height="25"></iconify-icon>
+      </span>
+      <span>
+        <iconify-icon class="header_icons_option" icon="carbon:settings" width="25" height="25"></iconify-icon>
+      </span>
+    </div>
 
-  <img
-    src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA5MTNfOTUg%2FMDAxNjMxNDU5NzgxMTg1.zTL8luOq59BI5pmdHnB9-Ck-h-KUmxr28v-0f8os9Kkg.H8IdL_FDdwZi1atRhMDtk6u1IIwuc3YEfJ-PdLsquO4g.JPEG.yh9425051%2FScreenshot%25A3%25DF20210912%25A3%25AD131440%25A3%25DFNAVER.jpg&type=sc960_832">
+  </header>
+  <a id="friends_link">
+    <iconify-icon icon="ion:information-circle" width="20" height="20"></iconify-icon>
+    Friends' Names Display
+    <iconify-icon icon="material-symbols:chevron-right-rounded" width="20" height="20"></iconify-icon>
+  </a>
+
+  <main class="friends-screen">
+    <div class="user-component">
+      <div class="user-component_column">
+        <img src="https://file.mk.co.kr/meet/neds/2022/11/image_readtop_2022_1028206_16686450625239668.jpg"
+          class="user-component_avatar_xl" />
+        <div>
+          <h4 class="user-component_title">
+            이명우
+          </h4>
+          <h6 class="user-component_subtitle">
+            아무 글
+          </h6>
+        </div>
+
+
+      </div>
+      <div class="user-component_column"></div>
+
+    </div>
+
+
+    <div class="friends-screen_channel">
+      <div class="friends-screen_channel_header">
+        <span>Channel</span>
+        <iconify-icon icon="material-symbols:keyboard-arrow-up-rounded" width="20" height="20"></iconify-icon>
+      </div>
+    </div>
+    <div class="user-component">
+      <div class="user-component_column">
+        <img
+          src="https://w.namu.la/s/c63213f0699c388a5bf83ff544186a79a617791c41874544d8d634f684c72c04639c8a92f9fa6f64ae8fe0bd068294d80ff5263bc93c173aa8b7c1edb617bde4a76c3796e189fc11976f044f48fea792fb25f4e227662f267e8dbecb1071730c"
+          class="user-component_avatar_s" />
+        <div>
+          <h4 class="user-component_title_not-bold">
+            Channel
+          </h4>
+          <h6 class="user-component_subtitle">
+
+          </h6>
+        </div>
+      </div>
+      <div class="user-component_column">
+        <span>2</span>
+        <iconify-icon icon="material-symbols:chevron-right-rounded" width="15" height="15"></iconify-icon>
+      </div>
+    </div>
+  </main>
+
+  <nav class="nav">
+    <ul class="nav_list">
+      <li class="nav_btn">
+        <a class="nav_link" href="friends.html.html">
+          <iconify-icon icon="mdi:user" width="25" height="25"></iconify-icon>
+        </a>
+      </li>
+      <li class="nav_btn">
+        <a class="nav_link" href="chat.html">
+          <span class="nav_dito">1</span>
+          <iconify-icon icon="ri:kakao-talk-line" width="25" height="25"></iconify-icon>
+        </a>
+      </li>
+
+      <li class="nav_btn">
+        <a class="nav_link" href="find.htmltml">
+
+          <iconify-icon icon="ph:magnifying-glass-bold" width="25" height="25"></iconify-icon>
+        </a>
+      </li>
+      <li class="nav_btn">
+        <a class="nav_link" href="more.html">
+          <div class="nav_alarm"> </div>
+          <iconify-icon icon="cil:options" width="25" height="25" rotate="90deg"></iconify-icon>
+        </a>
+      </li>
+
+    </ul>
+  </nav>
+
+  <div id="spalsh-screen">
+    <iconify-icon icon="mdi:chat" width="100" height="130"></iconify-icon>
+  </div>
+  
+  <div id="no-mobile">
+  <span>Your screen is too big</span>
+</div>
+
+
+  <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+
 </body>
 
 </html>
